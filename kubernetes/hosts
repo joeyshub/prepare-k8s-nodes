@@ -1,6 +1,0 @@
-[masters]
-master ansible_host=10.150.0.2 ansible_user=yuming123
-
-[workers]
-worker1 ansible_host=10.182.0.2 ansible_user=yuming123
-#worker2 ansible_host=10.182.0.2 ansible_user=yuming123
