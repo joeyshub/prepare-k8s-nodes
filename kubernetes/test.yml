@@ -1,0 +1,11 @@
+- hosts: 'workers, masters'
+  become: yes
+  
+  tasks:
+    - name: create the kube user account
+      shell: whoami
+      register: result
+
+    - debug:
+        var: result
+        # verbosity: 2
