@@ -10,8 +10,10 @@ $ kubectl apply -f jenkins-volume.yaml
 $ kubectl apply -f jenkins-sa.yaml
 
 ## Install Jenkins with Helm
-$ chart=jenkinsci/jenkins
-$ helm install jenkins -n jenkins -f jenkins-values.yaml $chart
+$ chart=jenkinsci/jenkins  
+$ helm install jenkins -n jenkins -f jenkins-values.yaml $chart  
+
+Visit the Jenkins website with http://${VM-InternetIP}:32000/login
 
 ## Upgrade Jenkins with Helm
 We might need to do Helm upgrade when chart dependency OR configuration changed 
