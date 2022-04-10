@@ -2,7 +2,7 @@
   become: yes
   
   tasks:
-    - name: create the kube user account
+    - name: verify the hosts file by run 'whoami' command
       shell: whoami
       register: result
 
