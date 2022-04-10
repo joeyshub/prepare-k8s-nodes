@@ -12,3 +12,7 @@ $ kubectl apply -f jenkins-sa.yaml
 ## Install Jenkins with Helm
 $ chart=jenkinsci/jenkins
 $ helm install jenkins -n jenkins -f jenkins-values.yaml $chart
+
+## Upgrade Jenkins with Helm
+We might need to do Helm upgrade when chart dependency OR configuration changed 
+$ helm upgrade -f jenkins-values.yaml jenkins $chart -n jenkins
